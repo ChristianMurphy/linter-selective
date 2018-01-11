@@ -1,0 +1,10 @@
+install:
+  - ps: Install-Product node 7
+  - node --version
+  - npm --version
+
+test_script:
+  - npm run lint-javascript
+  - npm run lint-markdown
+
+build: off
