@@ -1,5 +1,6 @@
 # Selective Atom Plugin
 
+[![apm](https://img.shields.io/apm/v/linter-selective.svg)](https://atom.io/packages/linter-selective)
 [![Linux Build Status](https://travis-ci.org/ChristianMurphy/linter-selective.svg?branch=master)](https://travis-ci.org/ChristianMurphy/linter-selective)
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/novxdk3nnh1rrfy1/branch/master?svg=true)](https://ci.appveyor.com/project/ChristianMurphy/linter-selective/branch/master)
 
