@@ -1,6 +1,6 @@
 {
   "name": "linter-selective",
-  "main": "./linter-selective.js",
+  "main": "./linter.js",
   "version": "0.0.2",
   "description": "Atom bindings for selective",
   "keywords": ["lint", "linter", "html", "selector", "rehype"],
@@ -9,11 +9,20 @@
   "engines": {
     "atom": ">=1.7.0 <2.0.0"
   },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "package-deps": ["linter"],
   "scripts": {
     "format": "prettier --write **/*.{js,json,md}",
     "precommit": "lint-staged",
     "commit": "commit",
-    "lint": "yarn lint-javascript && yarn lint-markdown && yarn lint-commit",
+    "lint":
+      "npm run lint-javascript && npm run lint-markdown && npm run lint-commit",
     "lint-commit": "commitlint --from HEAD~1",
     "lint-commit-ci": "commitlint-travis",
     "lint-javascript": "eslint --ignore-path .gitignore .",
@@ -21,7 +30,7 @@
       "remark . --frail --ignore-path .gitignore && eslint --ignore-path .gitignore . --ext md ."
   },
   "dependencies": {
-    "@selective/rehype": "0.0.2",
+    "@selective/rehype": "0.1.0",
     "atom-package-deps": "4.6.1",
     "rehype": "5.0.1",
     "unified-engine-atom": "5.0.0"
