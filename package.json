@@ -62,6 +62,9 @@
       "node": true,
       "es6": true
     },
+    "globals": {
+      "atom": true
+    },
     "parserOptions": {
       "ecmaVersion": 2017
     }
