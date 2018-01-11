@@ -53,10 +53,7 @@
     "remark-validate-links": "7.0.0"
   },
   "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional",
-      "@commitlint/config-lerna-scopes"
-    ]
+    "extends": ["@commitlint/config-conventional"]
   },
   "eslintConfig": {
     "extends": ["eslint:recommended", "standard-jsdoc"],
