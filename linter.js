@@ -14,3 +14,9 @@ module.exports.provideLinter = function() {
     })
   };
 };
+
+module.exports.activate = () => {
+  if (!atom.inSpecMode()) {
+    require("atom-package-deps").install("linter-selective");
+  }
+};
