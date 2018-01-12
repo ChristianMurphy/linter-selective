@@ -30,7 +30,7 @@
       "remark . --frail --ignore-path .gitignore && eslint --ignore-path .gitignore . --ext md ."
   },
   "dependencies": {
-    "@selective/rehype": "0.1.0",
+    "@selective/rehype": "0.1.2",
     "atom-package-deps": "4.6.1",
     "rehype": "5.0.1",
     "unified-engine-atom": "5.0.0"
