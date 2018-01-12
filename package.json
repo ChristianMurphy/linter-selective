@@ -38,7 +38,7 @@
   "devDependencies": {
     "@commitlint/cli": "6.0.2",
     "@commitlint/config-conventional": "5.2.3",
-    "@commitlint/prompt-cli": "6.0.1",
+    "@commitlint/prompt-cli": "6.0.2",
     "@commitlint/travis-cli": "6.0.1",
     "eslint": "4.15.0",
     "eslint-config-standard-jsdoc": "0.3.2",
