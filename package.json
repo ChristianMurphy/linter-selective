@@ -39,7 +39,7 @@
     "@commitlint/cli": "6.1.0",
     "@commitlint/config-conventional": "6.1.0",
     "@commitlint/prompt-cli": "6.1.0",
-    "@commitlint/travis-cli": "6.0.5",
+    "@commitlint/travis-cli": "6.1.0",
     "eslint": "4.17.0",
     "eslint-config-standard-jsdoc": "0.3.2",
     "eslint-plugin-jsdoc": "3.3.1",
