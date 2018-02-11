@@ -1,9 +1,15 @@
 {
   "name": "linter-selective",
   "main": "./linter.js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Atom bindings for selective",
-  "keywords": ["lint", "linter", "html", "selector", "rehype"],
+  "keywords": [
+    "lint",
+    "linter",
+    "html",
+    "selector",
+    "rehype"
+  ],
   "repository": "https://github.com/ChristianMurphy/linter-selective",
   "license": "MIT",
   "engines": {
@@ -16,12 +22,16 @@
       }
     }
   },
-  "package-deps": ["linter"],
+  "package-deps": [
+    "linter"
+  ],
   "dependencies": {
     "@selective/atom": "0.2.1"
   },
   "renovate": {
-    "extends": ["config:base"],
+    "extends": [
+      "config:base"
+    ],
     "automerge": true,
     "major": {
       "automerge": false
