@@ -17,71 +17,8 @@
     }
   },
   "package-deps": ["linter"],
-  "scripts": {
-    "format": "prettier --write **/*.{js,json,md}",
-    "precommit": "lint-staged",
-    "commit": "commit",
-    "lint":
-      "npm run lint-javascript && npm run lint-markdown && npm run lint-commit",
-    "lint-commit": "commitlint --from HEAD~1",
-    "lint-commit-ci": "commitlint-travis",
-    "lint-javascript": "eslint --ignore-path .gitignore .",
-    "lint-markdown":
-      "remark . --frail --ignore-path .gitignore && eslint --ignore-path .gitignore . --ext md ."
-  },
   "dependencies": {
-    "@selective/rehype": "0.1.2",
-    "atom-package-deps": "4.6.1",
-    "rehype": "5.0.1",
-    "unified-engine-atom": "5.0.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "6.1.0",
-    "@commitlint/config-conventional": "6.1.0",
-    "@commitlint/prompt-cli": "6.1.0",
-    "@commitlint/travis-cli": "6.1.0",
-    "eslint": "4.17.0",
-    "eslint-config-standard-jsdoc": "0.3.2",
-    "eslint-plugin-jsdoc": "3.3.1",
-    "eslint-plugin-markdown": "1.0.0-beta.7",
-    "husky": "0.14.3",
-    "lint-staged": "6.1.0",
-    "prettier": "1.10.2",
-    "remark-cli": "5.0.0",
-    "remark-preset-lint-consistent": "2.0.1",
-    "remark-preset-lint-recommended": "3.0.1",
-    "remark-validate-links": "7.0.0"
-  },
-  "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
-  },
-  "eslintConfig": {
-    "extends": ["eslint:recommended", "standard-jsdoc"],
-    "plugins": ["jsdoc", "markdown"],
-    "env": {
-      "node": true,
-      "es6": true
-    },
-    "globals": {
-      "atom": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 2017
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,md}": ["prettier --write", "git add"]
-  },
-  "remarkConfig": {
-    "settings": {
-      "ignoreName": ".gitignore"
-    },
-    "plugins": [
-      "preset-lint-recommended",
-      "preset-lint-consistent",
-      "validate-links",
-      ["remark-lint-list-item-indent", "mixed"]
-    ]
+    "@selective/atom": "0.1.2"
   },
   "renovate": {
     "extends": ["config:base"],
