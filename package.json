@@ -1,7 +1,7 @@
 {
   "name": "linter-selective",
   "main": "./linter.js",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Atom bindings for selective",
   "keywords": [
     "lint",
