@@ -26,7 +26,7 @@
     "linter"
   ],
   "dependencies": {
-    "@selective/atom": "0.2.7"
+    "@selective/atom": "0.2.8"
   },
   "renovate": {
     "extends": [
